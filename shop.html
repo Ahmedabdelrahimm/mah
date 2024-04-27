@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="shop.html">Catalogue</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="au.html">About Us</a></li>
+            <li><a onclick="showModal2()">Contact Us</a></li>
+
+        </ul>
+        <a href="cart.html" style="margin-right: 5px;"><i class="fa fa-shopping-cart"
+                style="font-size:24px; color: black;"></i></a>
+        <a onclick="showModal()" style="margin: 15px; margin-left: 20px;"><i class="fa fa-user"
+                style="color:black; font-size:24px;"></i>
+            </i></a>
+    </div>
+    <div class="position">
+        <div class="bigContainer">
+            <div class="products-container">
+                <div class="card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+                    <img src="Images/i1.jpg" alt="Product 1">
+                    <h2>Summery Yellow Kimono</h2>
+                    <p>EGP 1300</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nulla ac
+                        libero luctus aliquet.<br><br>
+                        <a href="Product.html" style="text-decoration: none; color: white;">See More</a>
+                    </p>
+                    <a href="cart.html" class="buy-now">Buy Now</a>
+                </div>
+                <div class="card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+                    <img src="Images/i2.jpg" alt="Product 2">
+                    <h2>White Wide Leg Pants and Grey Chiffon Cardigan</h2>
+                    <p>EGP 1400</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nulla ac
+                        libero luctus aliquet.<br><br>
+                        <a href="Product.html" style="text-decoration: none; color: white;">See More</a>
+                    </p>
+                    <a href="cart.html" class="buy-now">Buy Now</a>
+                </div>
+                <div class="card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+
+                    <img src="Images/i3.jpg" alt="Product 3">
+                    <h2>Long Satin Shirts </h2>
+                    <p>EGP 750</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nulla ac
+                        libero luctus aliquet.<br><br>
+                        <a href="Product.html" style="text-decoration: none; color: white;">See More</a>
+                    </p>
+                    <a href="cart.html" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="products01">
+                <div class="card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+
+                    <img src="Images/i4.jpg" alt="Product 1">
+                    <h2>Hot Red Cardigan</h2>
+                    <p>EGP 599</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nulla ac
+                        libero luctus aliquet.<br><br>
+                        <a href="Product.html" style="text-decoration: none; color: white;">See More</a>
+                    </p>
+                    <a href="cart.html" class="buy-now">Buy Now</a>
+                </div>
+                <div class="card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+
+                    <img src="Images/i5.jpg" alt="Product 2">
+                    <h2>Olive Oversized Kimono</h2>
+                    <p>EGP 1700</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nulla ac
+                        libero luctus aliquet.<br><br>
+                        <a href="Product.html" style="text-decoration: none; color: white;">See More</a>
+                    </p>
+                    <a href="cart.html" class="buy-now">Buy Now</a>
+                </div>
+                <div class="card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+
+                    <img src="Images/i6.jpg" alt="Product 3">
+                    <h2>Brown Heavy Wool Coat</h2>
+                    <p>EGP 1900</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nulla ac
+                        libero luctus aliquet.<br><br>
+                        <a href="Product.html" style="text-decoration: none; color: white;">See More</a>
+                    </p>
+                    <a href="cart.html" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+            <button id="seeMore" class="more">Load More</button>
+
+            <div class="products02">
+                <div class="card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+
+                    <img src="Images/i7.jpg" alt="Product 1">
+                    <h2>Product</h2>
+                    <p>EGP 599</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nulla ac
+                        libero luctus aliquet.<br><br>
+                        <a href="Product.html" style="text-decoration: none; color: white;">See More</a>
+                    </p>
+                    <a href="cart.html" class="buy-now">Buy Now</a>
+                </div>
+                <div class="card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+
+                    <img src="Images/i8.jpg" alt="Product 2">
+                    <h2>Product</h2>
+                    <p>EGP 1700</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nulla ac
+                        libero luctus aliquet.<br><br>
+                        <a href="Product.html" style="text-decoration: none; color: white;">See More</a>
+                    </p>
+                    <a href="cart.html" class="buy-now">Buy Now</a>
+                </div>
+                <div class="card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+
+                    <img src="Images/i9.jpg" alt="Product 3">
+                    <h2>Product</h2>
+                    <p>EGP 1900</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nulla ac
+                        libero luctus aliquet.<br><br>
+                        <a href="Product.html" style="text-decoration: none; color: white;">See More</a>
+                    </p>
+                    <a href="cart.html" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+            <div class="products02">
+                <div class="card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+
+                    <img src="Images/i10.jpg" alt="Product 1">
+                    <h2>Product</h2>
+                    <p>EGP 599</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nulla ac
+                        libero luctus aliquet.<br><br>
+                        <a href="Product.html" style="text-decoration: none; color: white;">See More</a>
+                    </p>
+                    <a href="cart.html" class="buy-now">Buy Now</a>
+                </div>
+                <div class="card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+
+                    <img src="Images/i11.jpg" alt="Product 2">
+                    <h2>Product</h2>
+                    <p>EGP 1700</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nulla ac
+                        libero luctus aliquet.<br><br>
+                        <a href="Product.html" style="text-decoration: none; color: white;">See More</a>
+                    </p>
+                    <a href="cart.html" class="buy-now">Buy Now</a>
+                </div>
+                <div class="card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+
+                    <img src="Images/i12.jpg" alt="Product 3">
+                    <h2>Product</h2>
+                    <p>EGP 1900</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nulla ac
+                        libero luctus aliquet.<br><br>
+                        <a href="Product.html" style="text-decoration: none; color: white">See More</a>
+                    </p>
+                    <a href="cart.html" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+            <button id="seeLess" class="more">Load Less</button>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Policies</h3>
+                    <ul>
+                        <li><a href="shippingPolicy.html">Shipping Policy</a></li>
+                        <li><a href="refundPolicy.html">Refund Policy</a></li>
+                        <li><a href="terms.html">Terms of service</a></li>
+                        <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/">instagram</a></li>
+                        <li><a href="https://www.pinterest.com/">Pinterest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacts</h3>
+                    <p>Email: MAH@Modesty.com</p>
+                    <p>Phone: +201011121509</p>
+                </div>
+            </div>
+        </footer>
+        <div id="modal">
+            <form action="shop.html">
+                <span onclick="closeModal()">&times;</span>
+                <h2>Style awaits! Sign in to discover your fashion journey!</h2>
+                <input type="email" placeholder="Email Address" required><br>
+                <input type="password" placeholder="Password" required><br>
+
+
+                <button class="btn2" type="submit">Sign in</button>
+                <button class="btn2" type="button" id="register-button">Register</button>
+
+            </form>
+        </div>
+
+        <div id="modal2">
+            <form action="contact.html">
+                <span onclick="closeModal2()">&times;</span>
+                <h2>Contact US</h2>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Email Address" required><br>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+                <button class="btn2" type="submit">Submit</button>
+
+            </form>
+        </div>
+
+        <script> $(document).ready(function () {
+                $(".products02").hide();
+                $("#seeLess").hide();
+                $().click(function () {
+                    $(".products02").fadeOut
+                        ();
+                })
+                $("#seeMore").click(function () {
+                    $(".products02").fadeIn();
+                    $(".more").fadeOut()
+                    $("#seeLess").fadeIn()
+                });
+
+                $("#seeLess").click(function () {
+                    $(".products02").fadeOut();
+                    $(".more").fadeIn()
+                    $("#seeLess").hide()
+                });
+
+            });
+        </script>
+        <script src="assets/js/script.js"></script>
+    </div>
+</body>
+
+</html>
